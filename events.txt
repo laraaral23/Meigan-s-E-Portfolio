@@ -73,9 +73,9 @@ li {font-size: 35px;}
 
 <p> ⤷ ゛ Cluster Meet '25-'26ˎˊ˗ </p> 
 
-<img src="cls1.jpg" alt="LPSci Girls Volleyball Team" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+<img src="cls1.JPG" alt="LPSci Girls Volleyball Team" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
 
-<img src="cls2.jpg" alt="LPSci Girls Volleyball Team" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+<img src="cls2.JPG" alt="LPSci Girls Volleyball Team" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
 
 <video class="my-video" autoplay muted loop>
   <source src="cls3.mp4" type="video/mp4">
