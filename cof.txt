@@ -35,7 +35,7 @@ a:hover {background-color: white;}
 <h1 class="h1"> My Friends ˗ˏˋ ♡ ˎˊ˗ </h1> 
 <div style="display:flex; align-items:center; justify-content:center; gap:30px;"> 
 
-  <img class="mixue" src="mixue.jpeg" alt= "My day one, comfort people, the one who I classify as my main, my very own everything" style="width:500px; height:auto; background-color:#d8bfd8;"> 
+  <img class="mixue" src="mixue.jpeg" alt= "My day one, comfort people, the one who I classify as my main, my very own everything" style="width:380px; height:auto; background-color:#d8bfd8;"> 
 
 <video class="my-video" autoplay muted loop>
   <source src="m1.mp4" type="video/mp4">
