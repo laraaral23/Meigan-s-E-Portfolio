@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head> <title>External/Linked Style Sheet Output</title> 
+
+<link rel="stylesheet" href="external.css" type="text/css"> 
+
+</head> 
+
+<body> 
+<h1> I have learn that... ✎ᝰ. </h1> 
+
+<p> 
+using external or linked, embedded or internal, or inline style sheets <span class="highlight"> makes coding more efficient, organized, and easy to every coder. </span> It makes the text file/s look neat and it prevents the confusion of mixing the elements used that we typically experience in html. In the eyes of the person coding, it doesn't create a messy setting compared to html that makes us feel stressed out about all of the compiled elements and content in one frame. <span class="highlight"> It saves time and effort making things less hassle to make </span> for us. In addition, it also <span class="highlight"> lessens our screen time </span>  in facing our gadget for several hours in coding and typing nonstop. 
+</p> 
+
+</body> 
+</html> 

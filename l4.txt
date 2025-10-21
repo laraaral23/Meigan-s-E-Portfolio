@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+<head><title> lesson 4 </title> 
+<style type="text/css">
+
+body {background-color: #d8bfd8;}
+
+p.purple {text-align: center; 
+ color: white; 
+ background-color: #d39bcb; 
+ font-family: Consolas;
+border: 5px solid white;
+ border-radius: 20px;
+font-size: 34px; } 
+
+h1 {color: #ffff31; 
+font-family: Cooper Black; 
+ background-color: #ffffe0; } 
+
+p.purple, h1 {border: 5px solid white;
+ border-radius: 20px;}
+
+
+</style> </head> 
+<body> 
+<h1> I have learned that... ✎ᝰ. </h1> 
+<p class="purple"> Using class selectors makes designing elements more precise across multiple elements. </p> <br> 
+
+<p class="purple"> It becomes handy in complex or multiple elements that we need different designs and layout. </p> <br>
+
+<p class="purple"> Using group selectors is very efficient in combining class selectors and turning them into groups to save time and space. </p> 
+
+</body> 
+</html> 
+
+

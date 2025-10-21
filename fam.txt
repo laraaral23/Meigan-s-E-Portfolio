@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Family</title> 
+<style> 
+body {margin: 0;
+       font-family: Comic Sans MS;
+       background-image: url(wallpa.jpg);#
+       }
+p, h1, a {color:#93c572; 
+       background-color: white;} 
+.fam { border: 5px solid white;
+ border-radius: 20px;  }
+a {font-size:40px;} 
+a:hover {background-color: cornsilk;}
+table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     font-size: 25px;
+     background-color: cornsilk;
+    }
+
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ffe4e1;
+      text-align: left;
+      color: #90ee90;
+th {
+      background-color: #d8e4bc;
+      color: white;
+     font-family:Cooper Black;
+    }
+
+   tr { background-color: #8fbc8f; }
+    }
+
+    tr:hover, th:hover {
+      background-color: white;
+
+}
+
+</style> 
+
+</head> 
+
+<body>  
+<h1> The Calderas Family ! </h1> 
+
+<div style="display:flex; align-items:center; justify-content:center; gap:30px;">
+
+<img class="fam" src="cal.jpeg" alt= "My family that means a lot to me, they have poured and showered me with love and that is everything to me. I couldn't ask for a more loing family tha mine. I love each one of them with all of my heart. May God always guide us with the strength and guidance we need for everyday. I ask God to continue to bless my parents and wth their business. I hope that we can continue what we have and may our love for each other grow more eventually every single day. " style="width:500px; height:auto; background-color: white;"> 
+
+<div style="background-color: white; border:2px solid cornsilk; border-radius:15px; padding:15px; font-size:18px; color:#ace1af; width:500px;"> 
+
+<p> My family that means a lot to me, they have poured and showered me with love and that is everything to me. I couldn't ask for a more loving family than mine. I love each one of them with all of my heart. May God always guide us with the strength and guidance we need for everyday. I ask God to continue to bless my parents and with their business. I hope that we can continue what we have and may our love for each other grow more eventually every single day.
+</p> 
+</div>
+</div> 
+
+<table>
+    <thead>
+    <tbody>
+      <tr>
+        <th>Family Member</th>
+        <th>Facts About Them </th>
+      </tr>
+      <tr>
+        <td> Mommy Ida Calderas ᯓ★ </td>
+        <td> Age: 48 years old <br> 
+            Birthdate: August 31 <br>
+           My Favorite trait of her: Loving <br> </td>
+     </tr> 
+     <tr>
+        <td> Daddy Jerry Calderas 𓆝 𓆟 𓆞 </td>
+        <td>Age: 45 years old <br> 
+            Birthdate: January 13 <br>
+           My Favorite trait of him: Hardworking <br></td>
+     </tr> 
+     <tr>
+        <td> Kuya JV Calderas ⭑.ᐟ</td>
+        <td>Age: 23 years old <br> 
+            Birthdate: September 1  <br>
+           My Favorite trait of him: Giving <br></td>
+     </tr> 
+     <tr>
+        <td> Nadia Calderas ᶻ 𝗓 𐰁 .ᐟ</td>
+        <td> Age: 13 years old <br> 
+            Birthdate: March 12 <br>
+           My Favorite trait of her: Talkative  <br>  </td>
+     </tr> 
+     <tr>
+        </thead>
+    <tbody>
+</table>
+<a href="mypersonalspace.html"> Back To Personal Space! </a> 
+
+</body> 
+</html> 

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>TLE/ICT</title>
+<style>
+body {
+  margin: 0;
+  font-family: Comic Sans MS;
+background-image: url(bg3.jpg);
+ h1, p, ul, h3, a { color: white;
+    border-radius: 20px;
+  border: 5px solid #d39bcb;
+ font-size: 40px; 
+
+} 
+h1, p, a {background-color:#e6a8d7;}
+p.divide { color: white;
+  background-color:#e6a8d7; 
+  font-size: 27px;}
+li {font-size: 27px;}
+
+.high {background-color: cornsilk;}
+</style>  </head> 
+<body> 
+<h1> Welcome To My ICT/TLE 2nd Quarter Outputs ! </h1>
+ 
+<p> ⤷ ゛Lesson 1ˎˊ˗ </p> 
+
+<img src="lesson.png" alt="The Layers of A Webpage" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+ 
+<img src="lesson1.jpg" alt="HTML, CSS, JavaScript" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<p class="divide"> What is CSS? <br> 
+~ CSS  stands for Cascading Style  Sheets <br> 
+~ CSS describes how  HTML  elements  are  to  be
+displayed on screen,  paper,  or  in  other  media.  <br> 
+~ CSS saves a  lot  of  work.  It  can  control  the  layout  of
+ multiple web pages  all  at  once <br> 
+~ External  stylesheets  are stored  in  CSS  files. <br> 
+~ CSS is  the  language  we  use to style  a  Web page.  <br> 
+~ CSS  separates  content  from  design,  making  websites
+easier  to  maintain and more attractive. <br> 
+</p> 
+
+<ul class="high"> The Layers of a webpage 
+<li> Behavior Layer </li> 
+<li> Presentation Layer </li> 
+<li> Content Layer </li> 
+</ul> 
+
+<h3 class="high" > Content Layer </h3> 
+<p class="divide"> define  and  layout  the  text,  images,  animation,  sound, 
+ video  and  everything  you  want  to  put  in  a  web page 
+ with  the  use  of  tags </p> 
+<p class="divide"> is  the  underlying  HTML  code  of  that  page.  Just as a house's  frame  creates  a  strong  foundation  upon  which 
+ the  rest  of  the  house  is  built,  a  solid  foundation of HTML 
+ creates a platform  upon  which a  website can be created </p>
+
+<h3 class="high"> Presentation Layer </h3> 
+<p class="divide"> The presentation layer is where you can define how people see your web page in a browser. </p> 
+
+<h3 class="high"> Behavior Layer </h3> 
+<p class="divide"> The behavior layer is where you have a real-tirm user interaction with the web page. The intyeractiob may be simple validation or input or filling out a form or even as big as web-based programs. </p>
+
+<ul class="high"> Benefits of using CSS 
+<li> CSS saves a lot of work </li> 
+<li> Easy maintenance </li> 
+<li> Adding style to webpage makes it more pleasing to the eye. </li>
+</ul> 
+<p> ⤷ ゛Lesson 2ˎˊ˗ </p> 
+
+<img src="lesson2.png" alt="The Three Different types of Style Sheet in CSS" style="width:375px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="external.png" alt="The Three Different types of Style Sheet in CSS" style="width:375px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="css.png" alt="The Three Different types of Style Sheet in CSS" style="width:375px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<p> ⤷ ゛Lesson 3ˎˊ˗ </p> 
+
+<img src="lesson3.png" alt="The Display Element" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="l3.png" alt="The Display Element" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+
+<p> ⤷ ゛Lesson 4ˎˊ˗ </p> 
+
+<img src="l41.png" alt="Classes, Class Selectors, Group Selectors" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="l42.png" alt="Classes, Class Selectors, Group Selectors" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<p> ⤷ ゛Lesson 5ˎˊ˗ </p> 
+
+<img src="l52.png" alt="CSS Selectors" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="l51.png" alt="CSS Selectors" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<p> ⤷ ゛Lesson 6ˎˊ˗ </p> 
+
+<img src="l62.png" alt="CSS Dimensions and Pseudo-Classes" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="l61.png" alt="CSS Dimensions and Pseudo-Classes" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<a  href="ictpage.html"> Back to ICT/TLE Page! </a>
+</body> 
+</html> 

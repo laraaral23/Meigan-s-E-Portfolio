@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>TLE/ICT</title>
+<style>
+body {
+  margin: 0;
+  font-family: Comic Sans MS;
+background-image: url(bg3.jpg);
+ h1, p, a { color: white;
+    border-radius: 20px;
+  border: 5px solid #d39bcb;
+ font-size: 40px; 
+
+} 
+h1, p, a {background-color:#e6a8d7;}
+p.divide { color: white;
+  background-color:#e6a8d7; 
+  font-size: 16px;}
+li {font-size: 35px;}
+
+.high {background-color: cornsilk;}
+
+.my-video { width: 400px;           
+            height: auto;          
+            border-radius: 15px;   
+            border: 5px solid #dda0dd;
+            object-fit: cover; }  
+</style>  </head> 
+<body> 
+<h1> Welcome To My ICT/TLE 2nd Quarter School Events Outputs ! </h1>
+<h1> a. Pictures and Videos </h1> 
+<p> ⤷ ゛ Buwan Ng Wika ˎˊ˗ </p> 
+
+<img src="bnw1.jpeg" alt="Buwan Ng Wika Opening" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+ 
+<img src="bnw2.jpeg" alt="HTML, CSS, JavaScript" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<video class="my-video" autoplay muted loop>
+  <source src="bnw3.mp4" type="video/mp4">
+ </video> 
+
+
+<p> ⤷ ゛ Intramurals '25-'26 ˎˊ˗ </p> 
+
+<img src="int1.jpg" alt="Intramurals Closing Ceremony" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="int2.jpeg" alt="Intramurals Closing Ceremony" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<video class="my-video" autoplay muted loop>
+  <source src="int3.mp4" type="video/mp4">
+ </video> 
+
+<p> ⤷ ゛ Science Month ˎˊ˗ </p> 
+
+<img src="sci1.jpg" alt="Science Month Opening" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="sci2.jpg" alt="Science Month Opening" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<video class="my-video" autoplay muted loop>
+  <source src="sci3.mp4" type="video/mp4">
+ </video> 
+
+
+<p> ⤷ ゛ Teacher's Day ˎˊ˗ </p> 
+
+<img src="tch1.jpeg" alt="Teacher's Day" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="tch2.jpeg" alt="Teacher's Day" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<video class="my-video" autoplay muted loop>
+  <source src="tch3.mp4" type="video/mp4">
+ </video> 
+
+<p> ⤷ ゛ Cluster Meet '25-'26ˎˊ˗ </p> 
+
+<img src="cls1.jpg" alt="LPSci Girls Volleyball Team" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="cls2.jpg" alt="LPSci Girls Volleyball Team" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<video class="my-video" autoplay muted loop>
+  <source src="cls3.mp4" type="video/mp4">
+ </video> 
+
+<p> ⤷ ゛ Araling Panlipunan Month ˎˊ˗ </p> 
+
+<img src="ap1.jpg" alt="AP MANAMO Seminar" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<img src="ap2.jpg" alt="AP MANAMO Seminar" style="width:600px; height:auto; border:5px solid cornsilk; border-radius:15px;">
+
+<video class="my-video" autoplay muted loop>
+  <source src="ap3.mp4" type="video/mp4">
+ </video> 
+
+<h1> B. Reflections </h1> 
+
+<p class="divide"> Reflection Questions: <br> 
+
+What is the most important thing I learned from the event? <br>
+
+How can I apply what I learned in real-life situations?
+<br>
+
+Did I actively participate in the event? How?
+<br>
+
+If I were to teach this topic/subject to a classmate, how would I explain it?
+<br>
+
+Why is it important to have an event (per subject)? Explain your answer.
+<br>
+
+</p> 
+<p> ⤷ ゛ Buwan Ng Wika ˎˊ˗ </p> 
+
+<p class="divide"> The most important thing I've learned from the event is showing nationalism and love for our own nation in different ways that young Filipinos can easily do to promote nationalism. <br><br>  
+
+I can apply what I learned in real-life situations in everyday life, from knowing and being aware about the proper use of every word in Filipino to showcasing what a true Filipino is by being proud and well educated about our language.  <br> <br>
+
+ I did actively participate in the event as I am one of the section's representative for the "Tagisan ng Talino" or quiz bee in english. I learned a lot from this content and I wish to do it again.  <br> <br>
+
+ If I were to teach Filipino to someone I would focus more on educating them with the Filipino literatures that emphasizes a true Filipino in different periods. This doesn't only cultivate a wider vocabulary but also deeper values we often experience here in The Philippines. For me this is essential specially for younger Filipinos to let them be aware about the beauty of studying our country and its language.  <br><br> 
+
+It is important to celebrate Buwan ng Wika as it symbolizes bringing back together the stories our ancestors built. It is also a great way to celebrate the dedication and hardwork they poured in fighting for our country. <br>  <br> 
+
+</p>
+
+<p> ⤷ ゛ Intramurals '25-'26 ˎˊ˗ </p> 
+<p class="divide"> The most important thing and value I learned from Intramurals 2025-2026 was camaraderie among the new friends and teammates that I was able to be with even for a short time. I learned to socialize with my schoolmates that I never thought I would be with. I gave my full commitment to our whole plan for Green Team Alcala would be successful, I tried my best to have a deep connection with them so that the tasks we do would be easier and lighter.  <br> <br> 
+
+I can apply what I learned in real-life situations when I get to experience higher and tougher challenges when commiting to a responsibility that requires socializing with a lot of people around me. <br> <br> 
+
+ I did actively participate in the event by first, being one of the heads of our team in terms of preparation for the opening ceremony, assisting of players, and managing our jerseys. Another one is participating in the volleyball girls team of Green Alcala where we won 3rd runner-up. <br> <br> 
+
+If I were to teach MAPEH to someone I would focus more on real-life application because in this way the teacher can easily evaluate how well the students understood the lesson and the students can also experience how the lesson really works by doing it not only studying about it. <br> <br> 
+
+It is important to have an event like Intramurals so that students can somehow take a break from academics and have more time on playing their favorite sports. This doesn't only promotes good health and physical fitness but also meeting new friends and discovering new interest are some of the main goals of Intramurals. Being a student doesn't always mean studying and being surrounded by four corners of a classroom, it can also mean to be the sporty version of yourself to let those stress out of your mind. <br> <br> 
+
+</p> 
+
+<p> ⤷ ゛ Science Month ˎˊ˗ </p> 
+<p class="divide"> 
+The most important thing I've learned in this year's Science month is appreciating the innovations that are popular today that are used to make our lives easier. Appreciating the young researchers and innovators gives motivation for others to try doing their own study and who knows they may become a successful young researcher in the future.  Science is everywhere, so it is important to learn its useful uses, especially in this generation where the use of technology using science is widespread. <br> <br> 
+
+I can apply what I learned in real-life situations where we need to be smart in using available materials and creating something from them that will help our lives today and help reduce global problems, especially waste. <br> <br> 
+
+I did actively participate in the events classroom-based activities conducted to showcase our own talents in technology, arts, and quiz bees. <br> <br> 
+
+If I were to teach Science to someone I would focus more on simulations in showing how things work under the microscope or how it generally works with their scientific explanations. I would also teach them the many important key people of Science today, the foundation and backbone of everything we see now. With their curiosity and excellence we can now know how and are the purpose of it in life. <br> <br>  
+
+It is important to have an event like this because it discovers the potential that students have that can be useful in the field of science and because of this, they are given an award and honor for the school that has been the guide of each student behind their great inventions and discoveries. <br> <br>  
+
+ </p> 
+
+<p> ⤷ ゛ Teacher's Day ˎˊ˗ </p> 
+<p class="divide"> The most important thing I've learned in celebrating this year's Teacher's Day is that every effort means a lot to teachers. Teachers tend to be very appreciative in every effort students make and students should do the same for them. A simple thank you, you're welcome, and small helping gestures will surely make them smile. <br> <br>  
+
+ I can apply what I learned in real-life situations by helping others in every way possible to make their tasks lighter or to make their day happy. Expressing our love for our special ones is a way to make our bond with them more strong and lasting. <br> <br> 
+
+ I did actively participate in the Teacher's Day event by leading the classroom based celebration for our assigned teachers. As the president, this is one of my responsibilities I need to resposibly do. <br> <br> 
+
+If I were to teach about teacher's day to someone I would likely to focus on the essence or true purpose of celebrating this day or month. It is not all about chocolates or roses but about being pure and genuine in expressing our love to our second parents we daily encounter and sometimes talk to for a couple of minutes. <br> <br> 
+
+It is important to celebrate Teacher's day to simply appreaciate more all of the sacrifices and efforts every teacher do not for the sake of their job but becase of the love they now have for their students. Teacher's day typically is a day off for teachers and a time for them to relax and enjoy the soecial treatment they get from their students. <br> <br> 
+</p> 
+
+<p> ⤷ ゛ Cluster Meet '25-'26ˎˊ˗ </p> 
+<p class="divide">  The most important thing I've learned from the event is there is nothing wrong on trying and getting out of your comfort zone. I felt insecure and unsure about my skills on volleyball that is why when they first approached me asking if I want to join I had second thoughts. In the end, I trusted my self with my capability and trusting my self because others do made a really big impact on me throughout the journey. <br> <br> 
+
+I can apply what I learned in real-life situations in more difficult situations where trusting my self is needed to accomplish the task. <br> <br> 
+
+I did actively participate in the event by being a player of LPSci's Womens Volleyball Team and that became a core memory of my LPSci life. Not only it was a great experience as someone who just started playing volleyball, it also was a fun journey for me because I've really learned something every training that I will for sure use everyday.  <br> <br> 
+
+ If I were to teach volleyball or sports to someone I would explain them that playing a sport doesn't always revolve on losing or winning but it is more on enjoying and loving the game because you enjoy playing it with the people you don't just consider as teammates but also family. <br> <br> 
+
+It is important to have an annual Cluster Meet between different schools because this gives the time for schools to get to know each other more and to experience playing outside your school. It is also a great experience for students that was chosen to represent their school showing full commitment and trust.  <br> <br> 
+
+<p> ⤷ ゛ Araling Panlipunan Month ˎˊ˗ </p> 
+<p class="divide"> 
+The most important thing I've learned from AP Month is the importance of being aware of the social issues and problems that the world is currently facing that we must take action on. We, the youth, are the ones who are expected to help with this because we will also benefit from it in the future. Being socially aware is an important part of our personality today that shapes our perspective on life that the people need so that we can be one in our goal of living well today. <br> <br> 
+
+I can apply what I learned in real-life situations n dealing with the issue that is being addressed today and if we are well educated about it, it is not enough to just sit back and relax, we need to take action in an effort that can bring peace to the problems. <br> <br> 
+
+I did actively participate in the event by doing my part in every classroom-based activity that was given to us. Participating not only for the sake of grades but also being curious and eager into the things we can do to give the world a better lifestyle. <br> <br> 
+
+If I were to teach Araling Panlipunan to someone I would first focus on the history of the world of how everything was back then and now teaching the social situations we face and the explanations behind it so that people today can be strategic and critical while helping to resolve it by being wise in decision-making. <br> <br> 
+
+It is importan to celebrate AP month because it teaches us to love our country and understand our responsibilities as Filipinos. This helps us prepare to become good citizens and future leaders of our nation.  These values and knowledge lay a strong foundation for their future roles in shaping a just and progressive society. <br> <br> 
+ </p> 
+
+
+<p class="divide"> Credits To The Rightful Owners: <br> 
+Buwan ng Wika video: Elle Ostan <br> 
+Science Month pictures: LPSci Standard Press Facebook page <br> 
+AP Month pictures: AP Club Facebook page <br> 
+AP Month video: Bela Paguigan <br>
+</p> 
+
+<a  href="ictpage.html"> Back to ICT/TLE Page! </a>
+</body> 
+</html> 

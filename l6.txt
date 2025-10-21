@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> 
+<head> <title> Lesson 6 Output </title> 
+<style type="text/css"> 
+body {background-color: #e6e6fa;
+      font-size: 36px;
+      color: cornsilk; }
+#myDIV {height:200px; background-color:white;}
+span {background: #b19cd9; visibility:visible;}
+
+</style>
+</head> 
+<body> 
+<h1 align="center"> I have learned that... ✎ᝰ. </h1> 
+<div id="myDIV"> 
+ It is important to know <span> how to control the size, visibility, and spacing of elements using CSS properties </span> like width, height, and visibility. <br> 
+I also discovered that <span> pseudo-classes make websites more interactive by changing styles when users hover over, click, or visit links. </span> 
+</div>
+</body>
+</html>
