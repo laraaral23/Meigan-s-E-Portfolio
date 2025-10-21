@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head><title>Website Home Page</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: auto;
+  background-image: url(berry.jpg); 
+  font-family: Comic Sans MS;
+}
+
+h1 {
+  background-color: #ffddf4; 
+  padding: 45px; 
+  border-radius: 20px;
+  font-size: 53px;
+}
+h3 {
+   padding: 20px; 
+   border-radius: 10px;
+   border: 5px solid #ffbcd9;
+   font-size: 20px;
+}
+h1, h3 { text-align: center;
+         color: #ffffff; 
+         border: 5px solid #ffbcd9;
+          background-color: #ffddf4; 
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:#f19cbb;
+}
+</style>
+</head>
+<body>
+  <div>
+    <h1>
+
+      Welcome To Meigan's Website ! (≧ヮ≦) &#129655; <br> 
+      <a href="mypersonalspace.html">My Personal Space</a> |
+      <a href="ictpage.html">TLE/ICT</a> |
+      <a href="ap.html">AP</a>
+
+    </h1>
+<h3> Meigan Lara L. Calderas 9-Faith </h3> 
+  </div>
+</body>
+</html>
