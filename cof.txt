@@ -6,7 +6,7 @@ body {margin: 0;
        font-family: Comic Sans MS;
        background-image: url(wallpa.jpg);}
 
-.my-video { width: 400px;           
+.my-video { width: 250px;           
             height: auto;          
             border-radius: 15px;   
             border: 5px solid #dda0dd;
