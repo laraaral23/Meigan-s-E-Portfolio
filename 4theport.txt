@@ -1,0 +1,1547 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICT content</title>
+
+<style>
+
+body{
+  margin:0;
+  background:linear-gradient(#ffd6ec,#ffc2e0);
+  font-family:"Comic Sans MS", monospace;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+color:deeppink;
+}
+
+/* NOTEBOOK */
+
+.notebook{
+  width:900px;
+  height:600px;
+  background:mediumpurple;
+  border-radius:10px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.2);
+  display:flex;
+  overflow:hidden;
+}
+
+/* TABS */
+
+.tabs{
+  width:200px;
+  background:#f1f5f9;
+  border-right:2px solid #ddd;
+  display:flex;
+  flex-direction:column;
+}
+
+.tab{
+  padding:20px;
+  cursor:pointer;
+  border-bottom:1px solid #ddd;
+  transition:0.2s;
+}
+
+.tab:hover{
+  background:#e2e8f0;
+}
+
+.tab.active{
+  background:white;
+  font-weight:bold;
+}
+
+/* PAGE */
+
+.page{
+  flex:1;
+  padding:40px;
+  position:relative;
+  overflow:auto;
+  background:
+    repeating-linear-gradient(
+      #ffe6f2,
+      #ffe6f2 28px,
+      #ffb6d9 29px
+    );
+}
+
+/* PAGE TURN */
+
+.pageContent{
+  opacity:0;
+  transform:translateX(40px);
+  transition:0.4s;
+}
+
+.pageContent.active{
+  opacity:1;
+  transform:translateX(0);
+}
+
+/* CURSOR TYPE */
+
+.cursor{
+  border-right:2px solid black;
+  animation:blink 1s infinite;
+}
+
+@keyframes blink{
+  0%{opacity:1}
+  50%{opacity:0}
+  100%{opacity:1}
+}
+
+/* PROJECT CARDS */
+
+.project{
+  padding:15px;
+  margin-top:20px;
+  border:1px dashed #999;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.project:hover{
+  transform:translateX(8px);
+  background:cornsilk;
+}
+
+.heart{
+  position:fixed;
+  color:#ff9cc9;
+  font-size:20px;
+  animation:floatUp linear forwards;
+  pointer-events:none;
+}
+
+@keyframes floatUp{
+  from{
+    transform:translateY(0);
+    opacity:1;
+  }
+  to{
+    transform:translateY(-120vh);
+    opacity:0;
+  }
+}
+
+.pageContent{
+  display:none;
+  opacity:0;
+  transition: opacity 0.3s ease;
+}
+
+.pageContent.active{
+  display:block;
+  opacity:1;
+}
+
+.tab{
+  padding:12px 18px;
+  margin:8px;
+  cursor:pointer;
+  background:#ffe4f2;
+  border-radius:25px;
+  text-align:center;
+  transition:0.25s;
+  border:2px solid transparent;
+}
+.tab.active{
+  background:#ff69b4;
+  color:white;
+  font-weight:bold;
+  border:2px solid #ff69b4;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.tab:hover{
+  background:#ffc0cb;
+  transform:scale(1.05);
+}
+.spiral{
+  position:absolute;
+  left:200px;
+  top:0;
+  width:20px;
+  height:100%;
+  background: repeating-linear-gradient(
+    white,
+    white 10px,
+    gray 10px,
+    gray 12px
+  );
+}
+
+
+.bubble {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  animation: bubbleFloat 8s infinite;
+}
+
+@keyframes bubbleFloat {
+  0% { transform: translateY(100px); opacity:0; }
+  50% { opacity:1; }
+  100% { transform: translateY(-300px); opacity:0; }
+}
+
+
+.float-img {
+  animation:float 4s ease-in-out infinite;
+width: 500px;
+height:300px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.home-tab{
+position:fixed;
+top:20px;
+left:20px;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+z-index:999;
+}
+
+
+</style>
+</head>
+
+<body>
+<a href="E-PORTFOLIO.html" class="home-tab" onclick="openPage('home')">Go Back to Home</a>
+
+<div class="notebook">
+
+<div class="tabs">
+<div class="tab active" data-page="about">ICT</div>
+<div class="tab" data-page="quarter1">1st Quarter Content</div>
+<div class="tab" data-page="quarter2">2nd Quarter Content</div>
+<div class="tab" data-page="quarter3">3rd Quarter Output</div>
+<div class="tab" data-page="quarter4">4th Quarter Content</div></div>
+
+<div class="page">
+
+<div id="about" class="pageContent active">
+<h2> Welcome! </h2>
+<p id="type"></p>
+</div>
+
+<div id="quarter1" class="pageContent">
+<h2> LESSON 1-7 CONTENT</h2>
+
+<div class="project" onclick="openProject(this)">
+Lesson 1 - Click to expand
+<p class="desc" style="display:none">
+<strong>Hyperlink/s</strong> <br>
+• is a reference link that allows you to navigate to another page of the same document or to another document  <br>
+• any navigational element of a web page  <br>
+• may be represented by a colored text with an underline or with an image  <br>
+• are enclosed between < a >< /a > anchor tags which will specify the target URL to an href (hyperlink reference) attribute in the opening tag  <br><br>
+
+<em>Each web page hyperlink is sensitive to three interactive states</em> <br>
+
+• <strong>Hover</strong> – gaining focus, the cursor is placed over the hyperlink<br>
+• <strong>Active</strong> – retrieving the linked resource, the user clicks the hyperlink <br>
+• <strong>Visited</strong> – the linked resource has previously been retrieved <br><br>
+<em>Three Types of Hyperlinks</em> <br>
+• <strong>Absolute URL</strong> – links to a page on a different web server<br>
+• <strong>Relative URL</strong> – links to a page on the same web server <br>
+• <strong>Named anchor </strong> – links to a different location on the same web page. <br>
+Note: A link does not have to be text, it can be an image or any other HTML element. <br><br>
+<strong>Web server</strong> <br>
+is a software and hardware combination that processes requests and delivers web content, like webpages, images, and videos, to users over the internet.
+<br>
+<strong>Anchor</strong> <br>
+term used to define a hyperlink.<br><br>
+<em>Creating a Link from one page to another</em><br>
+• We will now learn how to create anchors that allow viewers to go to another Web page or file.<br>
+• Anchors can also be made to make email hyperlinks.<br>
+• Hyperlinks are clicked in order for viewers to jump to a page specified in it.
+<br>
+• Anchors can be made thru the container tag <a></a> and setting the value of the attribute href as the target destination page.
+<br>
+anchor - Most important attribute and part that is visible to the reader <br><br>
+
+<em>Attributes </em><br>
+1.<strong> href </strong><br>
+Indicates the target of the anchor. Indicates the link’s destination. <br> <br>
+
+2.<strong> target </strong><br>
+Indicates the behavior the Web browser will carry out. <br><br>
+
+<em>Default appearance of links</em> <br>
+By default, links will appear as follows in all browsers:<br>
+An <strong>unvisited link </strong> is underlined and blue <br>
+A <strong>visited link </strong> is underlined and purple <br>
+An <strong>active link </strong> is underlined and red <br><br>
+
+<em>Target Attribute</em><br>
+Target attribute indicates what the Web browser will do when the hyperlink is clicked.<br>
+
+<strong>• blank </strong>– the value of the href attribute or target URL will be opened in a new window.<br>
+
+<strong>• _self </strong> – the value of the href attribute or target URL will be opened within the same frame.<br>
+
+<strong>• _parent </strong> – the value of the href attribute or target URL will be opened in the parent frameset.<br>
+
+<strong>• _top </strong>– the value of the href attribute or target URL will be opened in the full body of the window. <br><br>
+
+
+<em>Accessing links via keys</em><br>
+
+<strong>• Pointer </strong> – a mouse or similar device places a screen pointer over a hyperlink, then the user clicks to access its target.<br>
+
+<strong> • Tab</strong> – repeatedly hit the Tab key to successively focus on each hyperlink in turn, then hit Return to access the target of the currently selected hyperlink. <br>
+
+<strong>• Access key </strong> – hit a designated character key to focus on a particular hyperlink, then hit Return to access the target. <br><br>
+
+3. <strong>name </strong> <br>
+Assigns a name to the anchor defining an internal bookmark of the page.<br>
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 2 — Click to expand
+<p class="desc" style="display:none">
+<strong>Target attribute</strong> <br>
+Target attribute – defines where the linked document will be opened.<br><br>
+
+<strong>Cursor behavior</strong><br>
+
+In most graphical browsers, when the cursor hovers over a link, it typically changes into a hand with a stretched index finger, and the title appears some way (varies according to browser).<br><br>
+
+<strong>The name attribute</strong><br>
+
+When the name attribute is used, the <a> element defines a named anchor inside a HTML document.<br>
+
+Named anchors are not displayed in any special way. They are invisible to the reader.<br>
+
+The # in the href attribute defines a link to a named anchor.<br><br>
+
+<em>Creating an Email Link</em><br>
+
+• email links allow users to send email and communicate with you easily<br>
+
+• an email hyperlink opens the Create New Email Message of the MS Outlook Express (or the default mail client) and sets the message to be sent to the specified email address<br>
+
+• you can make your own email hyperlink by setting the value of the attribute href as mailto: followed by the email address<br><br>
+
+
+<em>Linking to a Page on a Different Web site</em><br>
+
+
+• To link to a page on a different web site, you have to find first the destination file path and then copy it to your code to create a link.<br>
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 3 — Click to expand
+<p class="desc" style="display:none">
+<strong> HTML Links</strong><br>
+
+There are two valid types of links in HTML, depending on the page your web browser is trying to access:<br>
+ <em>External and Internal.</em><br>
+
+<strong>External link</strong> – a link to a file or to a webpage that does not belong to the webpage’s own site.<br>
+
+<strong>Internal link </strong>– a link to a file or a webpage within the webpage’s own site, or to any part of the webpage itself.<br><br>
+
+
+In addition, a dead link to a webpage or file does not exist. Clicking on this kind of link results in a webpage that displays such messages as <em>“Error: File not found” or “The page could not be displayed”.</em><br><br>
+
+
+Only one tag, the anchor tag, is used to describe links. <br><br>
+
+<em>Using Gifs as Links</em><br>
+
+
+Graphics or images can be used to take you to another page in your website or to another website.<br>
+< a href="https://address of page" ><br>
+< img src=".jpg" >< /a ><br><br>
+
+
+<em>Using Graphics as Links</em><br>
+Graphics or images can be used to take you to another page in your website or to another website.<br>
+
+
+< a href="https://address of page" ><br>
+< img src=".gif" >< /a ><br><br>
+
+<strong>HTML 5 INPUT TYPES and FORMS</strong><br>
+
+
+HTML 5 features input controls and validation that are enhanced than the previous versions. The tag < input > is used to declare an input control. The matrix on the next slide shows only HTML input control that are supported by either of these browsers.<br><br>
+
+
+<strong>FORMS</strong><br>
+
+• Form allows you to gather feedback from your readers or visitors and work on the data to provide better service.<br>
+
+• The areas in the form are called fields, text fields or text boxes.<br>
+
+• Forms also contains command buttons such as Send or Reset button.<br>
+
+
+• Standard controls such as check buttons or radio buttons and list boxes can be seen.<br><br>
+
+
+Forms present a variety of means for users to key in information:<br>
+<em>
+• Textboxes<br>
+• Password boxes<br>
+• Radio buttons<br>
+• Check boxes<br>
+• Dropdown menus<br>
+• Text areas<br>
+• Submit buttons<br>
+• Reset or Clear buttons<br><br>
+</em>
+• A form has two attributes:<br>
+ <em>the action and the method</em><br>
+
+
+<strong>Action attribute</strong> – responsible for indicating where the information will be passed whether it is to another Web page or to a script.<br>
+
+
+<strong>Method attribute</strong> – responsible for indicating the way for sending the information.<br>
+
+
+• Get method of sending information appends the data into the URL.<br>
+
+The <strong>get method</strong> is just basically for retrieving data whereas the post method may update or store data.<br>
+
+<em>Attributes</em><br>
+1. <strong>action</strong><br>
+
+Indicates where the information will be submitted.<br>
+
+Values:<br>
+filename (path could be included), URL<br><br>
+
+2. <strong>method</strong><br>
+
+Indicates the method of submitting the information.<br>
+
+Values:<br>
+
+post, get<br><br>
+
+
+
+<em>Creating a Form</em><br>
+
+
+The container tag < form > is used to create a form.<br>
+
+
+Note: A form contains input elements like text fields, check boxes, radio buttons, submit buttons and others. A form also contains select lists, text area and others.<br><br>
+
+<strong>Form Elements</strong><br>
+
+
+Form elements are responsible for functionality of the web pages.<br>
+
+
+
+<strong>< datalist ></strong><br>
+Declares a list of pre-defined options for input controls.<br>
+<strong>< keygen ></strong><br>
+Identifies a key-pair generator field (for forms)<br>
+
+<strong>< output ></strong><br>
+Generates the result of a calculation.<br><br>
+
+<em>Data List Element</em><br>
+The data list element identifies a list of pre-defined choices for an input. It is used to offer an auto complete feature on input elements.<br>
+
+<em>Keygen Element</em><br>
+
+The keygen element < keygen > declares a key-pair generator field in a form.<br>
+
+
+It was developed for the purpose of security through validation of users.<br>
+
+Upon form submission, two keys are produced, a private and a public.<br>
+
+
+The private key is locally saved while the public key is transmitted to the server. <br>
+
+
+The public key could be used to generate a client certificate to authenticate the user in the future.<br>
+<br>
+
+<em>Output Element</em><br>
+
+The output element, represented by the tag <output>, specifies the result of a calculation such as computations performed in a script.<br>
+
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 4 — Click to expand
+<p class="desc" style="display:none">
+<strong>INPUT TYPE TAGS</strong><br>
+HTML 5 features input controls and validation that were enhanced. The tag < input > is used to declare an input control.<br> 
+<strong>color</strong><br>
+Selects color from a color picker.<br><br>
+
+<strong>date</strong><br>
+Defines a date control.<br><br>
+
+<strong>email</strong><br>
+Defines a field for an email address.<br><br>
+
+<strong>month</strong><br>
+Defines a month and year control.<br><br>
+
+<strong>datetime</strong><br>
+Allows you to select a date and time.<br><br>
+
+<strong>number</strong><br>
+Defines a numeric field.<br><br>
+
+<strong>range</strong><br>
+Defines a control for entering a number whose exact value is not important.<br><br>
+
+<strong>search</strong><br>
+Defines a search field.<br><br>
+
+<strong>time</strong><br>
+Allows the user to select a time.<br><br>
+
+<strong>url</strong><br>
+Used for input fields that should contain a URL address.<br><br>
+
+<strong>tel</strong><br>
+Defines a field for entering a telephone number.<br><br>
+
+<strong>Form and Input Attributes</strong><br>
+
+New attributes of forms, as well as inputs in HTML 5 would make filling out forms and data in the Web a lot easier. Note that in this lesson, the processing upon submission is already beyond HTML5 (usually done in ASP and PHP).<br><br>
+
+<strong>ASP -</strong> <em>Active Server Pages or Application Service Provider.</em><br>
+Active Server Pages is a Microsoft technology for building dynamic web pages, while Application Service Provider is a business model where companies offer software applications over the internet.<br><br>
+
+<strong>PHP</strong><br>
+PHP is a widely-used, open-source scripting language primarily for web development. It's known for its ability to generate dynamic content on web pages and is often embedded within HTML. PHP originally stood for "Personal Home Page," but now the acronym is recursive, standing for <em>"PHP: Hypertext Preprocessor".</em><br><br>
+
+<strong>Autocomplete and No Validation</strong><br>
+
+<strong>Autocomplete</strong><br>
+Autocomplete is applicable both on form and input. When it is turned on, the browser automatically completes values based on user’s previous inputs. The specific input tags can have their separate autocomplete — either on or off.<br>
+
+<strong>Novalidate</strong><br>
+Novalidate is the attribute that expresses that the input need not be verified in terms of format.<br><br>
+
+<em>Input Attributes</em><br>
+<strong>autofocus</strong><br>
+Cursor appears at the assigned textbox.<br><br>
+
+<strong>formaction</strong><br>
+Indicates the URL that will process the input once submitted.<br><br>
+
+<strong>formenctype</strong><br>
+Declares the manner of encoding of form-data upon submitting.<br><br>
+
+<strong>formmethod</strong><br>
+Specifies the HTTP method of transmission of form-data to the action URL.<br><br>
+
+<strong>HTTP</strong> (Hypertext Transfer Protocol)<br>
+HTTP is a fundamental protocol for transmitting information over the internet. It acts as a set of rules that govern how web browsers and servers communicate, enabling users to access and interact with websites.<br>
+
+<strong>formnovalidate</strong><br>
+Same function with the novalidate attribute.<br><br>
+
+<em>Input Attribute</em><br>
+
+<strong>formtarget</strong><br>
+Denotes a name or a keyword indicating the display location of the response received during form submission.<br><br>
+
+<strong>height & width</strong><br>
+Exclusive in input type image; sets image size. <br><br>
+
+<strong>multiple</strong><br>
+Allows more than one entry.<br><br>
+
+<strong>pattern</strong><br>
+Standard value of comparison with respect to the input value; usually applied to text, search, email addresses and passwords.<br><br>
+
+<strong>placeholder</strong><br>
+Provides a short clue on the expected value of an input.<br><br>
+
+<strong>required</strong><br>
+Declares that the certain input is filled out with information before submission.<br><br>
+
+Note:
+Can be used along with type="submit" and type="image".<br>
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 5 — Click to expand
+<p class="desc" style="display:none">
+<strong>INPUT ELEMENT</strong><br>
+
+The input element of form defined by the empty tag < input > is used for making textboxes, password boxes, check boxes, radio buttons, submit buttons and reset buttons depending on the value of the type attribute which can be:<br>
+
+<em>
+text<br>
+password<br>
+checkbox<br>
+radio<br>
+submit<br>
+reset<br>
+</em>
+<em>Attributes for < input ></em><br>
+
+<strong>name</strong><br>
+Assigns a name to the input field. The name can be used for various purposes and is required in most circumstances.<br>
+Values:<br>
+Any text (without spaces)<br><br>
+
+<strong>type</strong><br>
+Indicates the type of input field.<br>
+
+Values:<br>
+text, password, checkbox, radio, submit, reset<br><br>
+
+<strong>size</strong><br>
+Indicates the size of the input field.<br>
+
+Values:<br>
+Any number<br><br>
+
+<strong>value</strong><br>
+Indicates the initial value of the input field. Indicates the label for the submit and reset buttons.<br>
+
+Values:<br>
+Any text<br><br>
+
+<strong>checked</strong><br>
+Indicates if by default, the input field (radio button or check box) is selected.<br>
+
+Values:<br>
+None<br>
+
+The checked attribute needs no value. It just needs to be present in the tag in order for it to provide its effect.<br><br>
+
+<em>Creating a Textbox</em><br>
+
+Textboxes are single line text input boxes. Usually, text boxes are used for username input and other single line texts such as names, email addresses and others.<br>
+
+Textbox can be made by keying in text as the value of the type attribute of < input >.<br>
+
+Additionally, you can use the value attribute to set an initial text input. The size attribute then indicates the length of the textbox.<br><br>
+
+<em>Creating a Large Text Area</em><br>
+
+You can create an input field that can span several rows and columns to allow the readers to enter their feedback, requests, instructions, opinions or any communication.<br><br>
+
+Text areas are made via the container tag:<br>
+
+< textarea >< /textarea ><br>
+
+The content of this tag will be displayed in the text area by default.<br>
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 6 — Click to expand
+<p class="desc" style="display:none">
+<em>Creating Radio Buttons</em><br>
+Radio buttons provide the users a variety of choices where only one can be selected.<br>
+Radio buttons can be made by keying in radio as the value of the type attribute < input >.<br>
+In a set of radio buttons, only one can be chosen; the name attribute is also to indicate which set that radio button belongs.<br>
+
+Radio buttons of the same group have similar values for their name attribute.<br>
+
+The checked attribute is applicable for radio buttons to indicate a default selected option.<br>
+
+Radio buttons are usually used when the choices are only few.<br><br>
+
+<em>Creating Check Boxes</em><br>
+
+Unlike radio buttons, check boxes offer users a variety of choices where none, only one or many may be selected.<br>
+
+Check boxes can be made by keying in checkbox as the value of the type attribute of < input >.<br>
+
+The checked attribute is applicable for check boxes to indicate default selected options.<br><br>
+
+<em>Creating Drop-down Menus</em><br>
+
+Like radio buttons, drop-down lists or drop-down menus offer users a variety of choices where only one can be selected.<br>
+
+Drop-down menus are made via container tag:<br>
+
+< select >< /select ><br>
+Attributes<br>
+
+<strong>name</strong><br>
+Assigns a name to the dropdown menu. The name can be used for various purposes and is required in most circumstances.<br>
+
+Values:<br>
+Any text (without spaces)<br><br>
+
+<strong>size</strong><br>
+Indicates the number of visible items (lines).<br>
+Values:<br>
+Any number<br><br>
+
+<strong>< option > Tag</strong><br>
+
+Individual items in drop-down menus are defined by the container tag:<br>
+
+< option >< /option ><br>
+
+The content of the tag will be the item in the menu.<br><br>
+
+<em>Attributes</em><br>
+
+
+<strong>value</strong><br>
+Assigns a name to the dropdown menu item. The name can be used for various purposes and is required in most circumstances.<br>
+
+Values:<br>
+Any text (without spaces)<br><br>
+
+<strong>selected</strong><br>
+Indicates if by default, the item is selected.<br><br>
+
+Values:<br>
+None<br>
+
+The selected attribute is used in dropdown menus to indicate a default selected option.<br>
+
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 7 — Click to expand
+<p class="desc" style="display:none">
+<em>Creating an Email Feedback Form</em><br>
+• Feedback form allows communication with your web site’s visitors.<br>
+• Visitors can submit questions and comments which will then be forwarded to your email address.<br><br>
+
+<em>Attributes</em><br>
+<strong>action=“mailto:emailaddress”</strong><br>	
+Sends the form results to your email address<br><br>
+
+<strong>method=“get”</strong>	<br>
+Sends them as one request to the mail program.<br><br>
+
+<strong>enctype=“text/plain”</strong>	<br>
+Makes the results readable in your email box.<br><br>
+
+<em>Adding a Submit Button</em><br>
+
+• A submit button is usually placed at the end of forms and when clicked, submits the information input. It can be made by keying in submit as the value of the type attribute of < input >.<br>
+< input type=“reset” ><br>
+
+Likewise, the value of the value attribute indicates the label on the button.<br><br>
+
+<em>Adding a File</em><br>
+
+• File allows your website visitor to send files in your web server. File can be made by keying file as the value of the type attribute of <input> while the accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload).<br>
+
+Note: The accept attribute can only be used with < input type=“file” >.<br>
+
+<strong>file_extension</strong>	<br>
+A file extension starting with the character, ex. .gif, .jpg, .png, .doc<br>
+<strong>audio/*</strong><br>
+All sound files are accepted.<br><br>
+<strong>video/*</strong>	<br>
+All video files are accepted.<br><br>
+<strong>image/*</strong>	<br>
+All image files are accepted.<br><br>
+<strong>media_type</strong>	<br>
+A valid media type, with no parameters.<br><br>
+
+</p>
+</div>
+
+</div>
+
+
+<div id="quarter2" class="pageContent">
+<h2> LESSON 1-6 CONTENT</h2>
+<div class="project" onclick="openProject(this)">
+Lesson 1 - Click to expand
+<p class="desc" style="display:none">
+<strong> What is CSS? <br> </strong>
+• CSS stands for Cascading Style Sheets<br>
+• CSS describes how HTML elements are to be displayed on screen, paper, or in other media.<br>
+• CSS saves a lot of work. It can control the layout of multiple web pages all at once. <br>
+• External stylesheets are stored in CSS files.<br>
+• CSS is the language we use to style a Web page.<br>
+• CSS separates content from design, making websites easier to maintain and more attractive.<br><br>
+
+
+<em>Why use CSS? </em><br>
+• CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.<br>
+• Provides consistency across web pages.<br>
+• Saves time: one CSS file can control multiple pages.<br>
+• Improves accessibility and responsiveness.<br>
+• Enhances design with layout, colors, and animations.<br>
+<br><br>
+
+<strong> The layers of a webpage: </strong><br>
+- Behavior Layer<br>
+- Presentation Layer<br>
+- Content Layer<br>
+
+<em>Each layer of the webpage has its specific use or function in the web page. Each plays an important role to be able to attain the goal or objective of a particular website.</em><br><br>
+
+<strong>Content Layer</strong><br>
+<em>The content layer is where you:</em><br>
+• define and layout the text, images, animation, sound, video and everything you want to put in a web page with the use of tags<br>
+
+• is the underlying HTML code of that page. Just as a house's frame creates a strong foundation upon which the rest of the house is built, a solid foundation of HTML creates a platform upon which a website can be created.<br><br>
+
+<em>Content Layer needs to have:</em><br>
+• Text that is easy to understand.<br>
+
+• Text that makes sense without a visual representation (wrong example: “click on the links below”).<br>
+
+• Alternative text for every image, sound piece or video that is content.<br>
+
+• Text that is fit for the web (KISS (keep it short and simple), structured into headers, paragraphs and lists).<br><br>
+
+
+<em>Content Layer needs to have:</em><br>
+• Explanations of Acronyms and Abbreviations.<br>
+• Content images need to be unambiguous for the colorblind and text in images needs to have a sufficient size and contrast.<br>
+• Information to the users of changes necessary to her environment (example: “opens in a new window” or “PDF document, 182kb”). <br><br>
+
+<strong>Presentation Layer</strong><br>
+The presentation layer is where you can define how people see your web page in a browser.<br>
+<br>
+
+<em>Presentation Layer needs to:</em><br>
+• ensure that text can be zoomed without making the site unusable.<br>
+• ensure that the interactive elements of the site are easy to find.<br>
+• ensure that images and foreground and background have enough contrast and are unambiguous to the colorblind.<br><br>
+<em>Presentation Layer needs to:</em><br>
+• give the site a consistent navigation.<br>
+• aid the user through business processes.<br>
+• separate content into easily understandable units.<br><br>
+
+<strong>Behavior Layer</strong><br>
+The behavior layer is where you have a real-time user interaction with the web page. The interaction may be a simple validation of input or filling out a form or even as big as web-based programs.<br>
+<br>
+
+<em>Behavior Layer needs to:</em><br>
+• ensure that all the functionality is available to the user regardless of input device.<br>
+• make the user experience as easy as possible by cutting down on options until they are necessary.<br>
+In comparison, HTML is used to create the actual content/foundation of the page and CSS is responsible for the design or style of the website, including the layout, visual effects and background color.<br><br>
+
+<strong>Benefits of using CSS</strong><br>
+- CSS saves a lot of work.<br>
+
+- You do not have to code the CSS repeatedly into an HTML file. You just need to write the CSS code once and then reuse the same stylesheet in multiple HTML pages. This saves coding time and space of your hard disk.<br>
+
+- Easy maintenance<br>
+
+- You can control the look and layout of several HTML pages at once.<br>
+
+- Adding style to webpage makes it more pleasing to the eye.<br>
+
+- Improve the appearance of a website by allowing you to create a much more stylish website since CSS offers a wide array of expressive style capableness.<br>
+<br>
+
+
+<strong>Capabilities of CSS</strong><br>
+
+- CSS makes your pages easily updateable. CSS makes it possible to update the layout of the entire page quickly. You can specify a style once and you can apply it as many times in your document.<br>
+
+- Position objects on the page. CSS gives you control when placing objects on the page exactly where you want them.<br>
+
+- Layer objects on the page. CSS allows you to position objects in three dimensions.<br>
+
+- Create custom tags. CSS allows you to create custom tags to achieve specialized objectives. <br><br>
+
+
+<strong>Advantages of using CSS</strong><br>
+
+- Save typing and development time because you have to enter CSS code only once and it can be applied to many HTML scripts. <br>
+
+- Download faster because your browser will download only one file once. <br>
+
+- Faster page loading. <br>
+
+- You can also have multiple link tags in one document. <br>
+
+- Better design flexibility.<br>
+
+- Easier to maintain and update.<br>
+
+- Separation of structure (HTML) and style (CSS).<br>
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 2 - Click to expand
+<p class="desc" style="display:none">
+<strong>What will we use in CSS?</strong><br>
+• Curly braces { }<br>
+• Colons : <br>
+• Semi Colons ; <br>
+• Selectors <br>
+• Declarations<br><br>
+
+
+<strong>Structure of CSS</strong><br>
+
+<strong>Selector</strong> – the HTML element you want to style; is a pattern used to "find" or "select" the HTML elements on a webpage to which a set of CSS rules will be applied.<br>
+
+<strong>Property</strong> – the style attribute you want to modify; is a named characteristic or attribute that defines a specific aspect of how an HTML element should be displayed or rendered by the browser. <br>
+
+<strong>Value </strong>– the weight of the attribute you want to apply to the element property; is the specific setting assigned to a CSS property. <br>
+
+<strong>Declaration</strong> – is a single instruction that defines a specific style for an element.<br>
+
+<strong>Declaration block</strong> – fundamental part of a CSS rule. It is a block of code that contains one or more CSS declarations which define the styling rules for the selected HTML elements. <br><br>
+
+<strong>The Style Sheet and its Parts</strong><br>
+A set of instructions to a Web browser on how to display various elements on a Web page is known as style sheet.<br><br>
+
+Every CSS (whether it is contained in a .css file, or embedded in the head element of an HTML document) is a series of instructions called statements.<br>
+<br>
+
+<em>The statement does two things</em><br>
+• It identifies the elements in an HTML document that it affects.<br>
+
+• It tells the browser how to draw these elements.<br>
+
+
+Elements are considered to be paragraphs, links, list items, and so on.<br>
+<br>
+
+<strong>How Do Style Sheet Work?</strong> <br>
+Style sheets are just text files, or text embedded in the head of an HTML document, that help separate content from appearance.<br>
+
+The content of the page goes into an HTML file.<br>
+
+The appearance goes into a style sheet.<br><br>
+
+
+<strong>Two things to remember when using CSS code</strong> <br>
+1. The type attribute should always be
+< style type="text/css" ><br>
+ 2. CSS code should be enclosed in HTML comments < !-- -- > so that browsers that do not understand CSS will ignore the code.<br>
+<br>
+ <strong>Three Kinds of CSS</strong> <br>
+<strong>External Style Sheets</strong><br>
+ • most global of the three kinds of CSS
+<br>
+ • apply the same style to unlimited pages<br>
+ • consistent design across pages <br>
+• changing one file updates the entire site<br>
+ • file extension is .css <br><br>
+
+  <strong>Embedded Style Sheets (Internal)</strong><br>
+ • used for document-wide style rule <br>
+• placed inside the `<head>` of HTML<br>
+ • used when one page needs a different style <br>
+• overrides external style sheets<br><br>
+
+ <strong>Inline Style Sheets</strong> <br>
+• used for isolated changes<br>
+ • stored inside HTML tags <br>
+• overrides embedded and external styles<br><br>
+
+<strong>CSS Comments</strong><br>
+
+Comments explain code and improve readability.<br>
+
+
+Browsers ignore comments.<br>
+
+
+CSS comment format:<br>
+
+
+/* comment */<br>
+
+Comments can also span multiple lines.<br>
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 3 - Click to expand
+<p class="desc" style="display:none">
+<strong>Display Property<br>
+</strong>
+CSS display property allows you to control how an element is displayed.<br><br>
+
+<strong>Kinds of Elements in CSS</strong><br>
+
+<strong>Block level elements</strong><br>
+
+Laid out vertically.<br>
+
+
+Examples:<br>
+
+
+• < p ><br>
+• < ol >, < ul >, < dl > <br>
+• headings <br>
+• < article >, < section >, < div ><br>
+
+Block elements start on a new line and take full width.<br><br>
+
+
+<strong>Inline level elements</strong><br>
+Displayed in a line.<br>
+Examples:<br>
+• < a ><br>
+• < strong >, < em >, < b >, < I >, < q >, < mark ><br>
+• < span ><br>
+
+
+Inline elements do not start a new line.<br><br>
+
+<em>Important rule:</em><br>
+
+Inline elements cannot contain block elements.<br>
+<br>
+
+Display Property Values<br>
+display: inline → horizontal layout<br>
+display: block → vertical layout<br>
+display: list-item → display as list item<br>
+display: none → hidden element<br>
+display: inherit → inherit parent value<br><br>
+
+
+<strong>Div Tag</strong><br>
+Div divides webpage content into sections.<br><br>
+
+
+• block level element<br>
+• adds structure<br>
+• usually used for large sections<br>
+• adds spacing before and after<br><br>
+
+
+<strong> Span Tag</strong><br>
+Span adds structure within a line.<br><br>
+
+
+• inline element<br>
+• used for emphasizing words in a paragraph<br>
+
+<em> Span vs Div</em><br>
+Span → small inline section<br>
+Div → larger block section<br><br>
+
+
+Both do not have default styling and rely on CSS.<br>
+
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 4 - Click to expand
+<p class="desc" style="display:none">
+<strong>CSS Rule</strong><br>
+
+<em>A CSS rule has two main parts:</em><br>
+
+• selector<br>
+• style declarations<br><br>
+
+
+<strong>Style Properties</strong> <br>
+
+1. Fonts<br>
+2. Colors and backgrounds<br>
+3. Text <br>
+4. Boxes and layout <br>
+5. Lists <br>
+6. Tag classifications<br><br>
+
+
+<strong>Classes</strong><br>
+Class is a user-defined selector.<br>
+
+It allows applying styles to specific HTML elements.<br>
+
+Classes are reusable style definitions.<br>
+
+Classes start with a dot.<br>
+
+Example:<br>
+
+<em> p.golden {color:blue;}<br>
+.sodapop {color:red;}<br> </em><br><br>
+
+
+<em>Rules about Classes</em><br>
+• one element can have multiple classes<br>
+• one class can be applied to many elements<br>
+• classes maintain consistency with flexibility<br>
+
+<strong>Element + Class Selector</strong><br>
+Example:<br>
+
+p.note {color:blue;}<br>
+This applies style only to paragraph elements with class "note".<br><br>
+
+<strong>Class Selector</strong><br>
+
+.classname<br>
+Applies to any element with that class.<br><br>
+
+
+<strong>Grouping Selectors</strong><br>
+Selectors can be grouped using commas.<br>
+
+Example:<br>
+
+h1,p {color:blue;}<br>
+
+This applies the same style to both elements.<br>
+
+
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 5 - Click to expand
+<p class="desc" style="display:none">
+<strong>CSS Selectors</strong><br>
+CSS selectors are used to “find” or “select” the HTML elements that you want to style.<br><br>
+<strong>CSS selectors are divided into 6 types:</strong><br>
+1. Class selector<br>
+2. Element selector or Tag selector<br>
+3. ID selector<br>
+4. Universal selector <br>
+5. Group selector <br>
+6. Attribute selector <br><br>
+
+
+<strong>Element Selector</strong><br>
+• selects HTML elements (p, div, h1, etc.) and applies CSS to them.<br>
+
+Example CSS code:<br>
+
+p {line-height: 1.5; font-size: 16px;}<br>
+<br>
+<br>
+<strong>ID Selector</strong><br>
+• is a style applied to one element in a page.<br>
+
+• normally used once, usually in a page title or the navigation part of the page<br>
+
+• defined by “#” and uses id attribute of the HTML element. <br>
+
+• ID selector selects the HTML element with a unique identifier (id) and adds CSS to it.<br>
+
+• it is not advisable to start an id selector with a number because some browsers do not support it.<br>
+
+• the ID selector is unique and selects one unique element.<br><br>
+
+<strong>Universal Selector</strong><br>
+The universal selector selects every single HTML element on the page.<br>
+
+It is written using the asterisk (*) character.<br><br>
+
+<strong>Group Selector</strong><br>
+The group selector allows you to select multiple elements and apply the same style to all of them.<br><br>
+
+<strong>Attribute Selector</strong><br>
+The attribute selector selects elements based on specific attribute values.<br><br>
+
+The syntax for the attribute selector is:<br>
+
+
+Element[attribute]<br>
+
+<strong>When to use different selectors?</strong><br><br>
+
+
+<em>When to use class selector</em><br><br>
+Use a class selector when you want to apply the same style to multiple elements or when elements share a common category or purpose.<br>
+
+Use class when styling many elements that share the same style — even if they have different tags.<br>
+
+<em>When to use ID selector</em><br>
+<br>
+
+Use an ID selector when styling a unique element that appears only once on a page (like a header, footer, or main section).<br>
+
+<em>When to use element/tag selector</em><br><br>
+Use an element selector to style all occurrences of a specific HTML tag (like all < p > or < h1 >).<br>
+
+
+<em>When to use universal selector</em><br><br>
+
+
+Use the universal selector when you want to style all elements on the page, for example:<br>
+
+• resetting margins<br>
+• resetting padding<br>
+• setting box-sizing<br>
+
+<em>When to use group selector</em><br>
+<br>
+
+Use a group selector when different elements share the same styling to avoid repeating code.<br>
+<em>When to use attribute selector</em><br>
+<br>
+
+Use an attribute selector when you want to style elements based on their HTML attributes or attribute values.<br>
+
+
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 6 - Click to expand
+<p class="desc" style="display:none">
+<strong>Setting Dimensions</strong><br>
+CSS can be used to manage dimensions such as visibility, width, or height of HTML elements.<br>
+
+<strong>Property for Dimensions</strong><br>
+<strong>visibility</strong><br>
+Indicates if an element is visible or hidden.<br><br>
+
+<em>visibility: visible</em><br>
+• default value, the element is visible.<br><br>
+
+<em>visibility: hidden</em><br>
+• The element is hidden but still takes up space.<br><br>
+
+<em>visibility: collapse</em><br>
+• Only for table rows (< tr >), row groups (< tbody >), columns (< col >), column groups (< colgroup >), and flex items.<br>
+
+This value removes a row or column as if display:none were used.<br>
+If collapse is used on other elements, it renders as hidden.<br>
+
+<em>Other Dimension Properties<br><br>
+Property	Definition	Example</em><br>
+<strong>width</strong>	Indicates the width	width:200px<br>
+<strong>height</strong>	Indicates the height	height:auto<br>
+<strong>line-height</strong>	Indicates the line spacing	line-height:12px<br>
+<strong>max-height</strong>	Indicates the maximum height	max-height:12px<br>
+<strong>min-height</strong>	Indicates the minimum height	min-height:12px<br>
+<strong>max-width</strong>	Indicates the maximum width	max-width:12px<br>
+<strong>min-width</strong>	Indicates the minimum width	min-width:12px<br><br>
+This CSS feature is a good way of controlling paragraphs, tables and other elements.<br><br>
+
+Height and Visibility<br>
+If collapse is used on other elements, it renders as hidden.<br><br>
+
+<strong>Pseudo-Classes and Links</strong><br>
+Recall that classes are user-defined selectors used to control individual HTML element formatting.<br>
+
+Pseudo-classes are not user-defined and are defined by a colon (:).<br>
+
+Specific pseudo-classes can be used only on specific HTML elements.<br><br>
+
+<strong>Anchor Element Pseudo-Classes</strong><br>
+The anchor (< a >) element has four pseudo-classes:<br>
+
+-link<br>
+
+-visited<br>
+
+-hover<br>
+
+-active<br><br>
+
+Each affects the behavior of hyperlinks.<br><br>
+
+Description of Pseudo-Classes<br>
+• <strong>:link</strong> – hyperlinks that have not yet been visited.<br>
+
+• <strong>:visited</strong> – visited hyperlinks.<br>
+
+• <strong>:hover</strong> – when the mouse pointer is over the link.<br>
+
+• <strong>:active </strong>– when the link is clicked.<br><br>
+
+<strong>Order of Pseudo-Classes</strong><br>
+The order is important.<br>
+
+The correct order is:<br>
+
+<strong>LVHA</strong><br>
+
+<em>Link<br>
+Visited<br>
+Hover<br>
+Active<em><br><br>
+
+Pseudo-Class Properties<br><br>
+Property	Syntax	Description<br>
+<strong>:link</strong>	a:link {…}	Sets unvisited link characteristic<br>
+<strong>:visited</strong>	a:visited {…}	Sets visited link effect<br>
+<strong>:active</strong>	a:active {…}	Sets appearance when clicked<br>
+<strong>:hover</strong>	a:hover {…}	Sets appearance when hovered<br>
+<strong>:focus	</strong>a:focus {…}	Sets appearance when focused<br><br>
+<strong>Important reminder:</strong><br>
+
+The hover property should be placed after the link property for it to function properly.<br>
+
+Pseudo-classes can also be used on any element on a web page.<br>
+
+</p>
+</div>
+</div>
+
+<div id="quarter3" class="pageContent">
+<h2> Browser Outputs </h2>
+<div class="project" onclick="openProject(this)">
+ Click to expand !
+<p class="desc" style="display:none">
+<img src="tci1234.png" class="float-img">
+<img src="ict1234.png" class="float-img">
+<img src="tci567.png" class="float-img">
+<img src="ict567.png" class="float-img">
+<img src="tci8910.png" class="float-img">
+<img src="ict8910.png" class="float-img">
+</p>
+</div>
+</div>
+
+<div id="quarter4" class="pageContent">
+<h2> LESSON 1-4 CONTENT</h2>
+<div class="project" onclick="openProject(this)">
+Lesson 1 - Click to expand
+<p class="desc" style="display:none">
+
+<strong> <em> Introduction to JavaScript</em> </strong><br><br>
+<strong>Purpose:</strong> To create dynamic, interactive user experiences, handling everything from UI rendering (like React for Facebook) and content loading to real-time updates, personalized feeds, video controls (captions, volume), and tracking user activity (Meta Pixel).<br><br>
+<strong>Websites Types</strong><br>
+<strong>Static Website:</strong> <br>Sometimes called a flat page or a stationary page, it is a web page delivered to a browser exactly as stored (e.g., Photographer's portfolio).<br><br>
+<strong>Dynamic Website:</strong> <br>A type of website that displays different content and interacts with users based on their actions, preferences, or other variables (e.g., Social Media Platforms).<br><br>
+<strong>JavaScript (JS) Overview:</strong><br>
+- It is the most popular and widely used scripting language on the internet and works in all major browsers.<br>
+- Developed by Brendan Eich of Netscape under the name Mocha, later renamed LiveScript.<br>
+- Opened to Internet Explorer in 1996.<br>
+- It is a trademark of Oracle Corporation, licensed to entities like Mozilla Foundation.<br>
+- It is client-side, high-level, interpreted, and object-oriented.<br>
+-<strong>Client-side: </strong><br>
+Codes/formulas are processed on the user's computer.<br>
+<strong>High-level:</strong> <br>
+Codes are written in words close to English.<br>
+<strong>Interpreted:</strong> <br>
+Passed as source code and converted into machine code.<br><br>
+<strong>Capabilities of JS:</strong><br>
+-Designed to add interactivity and functionality to websites, making contents more dynamic.<br>
+-Reacts to events (mouse clicks, pre-loading).<br>
+-Validates data (saving processing time compared to server-side scripting).<br>
+-Creates cookies (used to save/retrieve information or monitor visitor habits).<br>
+-Used by Google for real-time updates, YouTube for seamless streaming, and Facebook for real-time content updates.<br><br>
+<strong>Features:</strong><br>
+-Supports structured programming syntax in C.<br>
+-Has dynamic typing; the variable type can change during run time.<br>
+-Runs locally, making interaction faster and more responsive.<br>
+-Can detect user actions HTML cannot do alone.<br>
+-Can be combined with CSS to produce DHTML (Dynamic HTML) for effects like message scrollers.<br><br>
+<strong>Characteristics:</strong> <br>
+Lightweight, inserted into HTML, supported by modern browsers, license-free, and easy to learn.<br><br>
+<strong>Disadvantages:</strong><br>
+-Not supported by some browsers (e.g., older mobile phones).<br>
+-Security risks: Some browsers disable JS for safety; secrets in JS can be extracted by adversaries; malicious authors can deliver scripts to client computers.<br>
+-Source code is sent to the client and cannot be perfectly concealed; it can be reverse-engineered.<br><br>
+<strong>Basic Tools and Components:</strong><br>
+-A script is a set of instructions connecting components for a task.
+Tools needed: A text editor and a web browser.<br>
+-Basic components: Objects, methods, and properties.<br>
+< script > tags connote JS; the type attribute defines the version.<br>
+-document.write command is used to display output.<br>
+
+
+</p>
+</div>
+<div class="project" onclick="openProject(this)">
+Lesson 2 - Click to expand
+<p class="desc" style="display:none">
+<strong>Script Placement and Guidelines</strong><br><br>
+<strong>Script Placement:</strong><br>
+-Execution can be controlled by placing scripts in different HTML sections.<br>
+-<strong>HEAD Section:</strong> <br>Scripts are pre-loaded and executed before events are triggered. Ideally used for function calls.<br>
+-<strong>BODY Section:</strong><br> Scripts are executed when the page loads.<br>
+-<strong>HEAD & BODY:</strong><br> You can use multiple script tags in both sections.<br><br>
+<strong>External JavaScript:</strong><br>
+-Helpful for controlling multiple HTML files without rewriting code.<br>
+-Files are saved with a . js extension and linked using the src attribute<br>
+External JS files must not contain opening and closing script tags.<br><br>
+<strong>Comments:</strong><br>
+-Used for explaining code or debugging.<br>
+-Single-line: Use two backslashes (//).<br>
+-Multi-line/Block: Start with /* and end with */<br><br>
+<strong>JavaScript Guidelines:</strong><br>
+-<strong>Case Sensitive: </strong><br>Naming is critical; Uppercase and lowercase are not equivalent.<br>
+-<strong>White Space:</strong> <br>JS ignores white space within a line of code, but using it between expressions makes code easier to read.<br>
+-<strong>Breaking up code lines:</strong><br> Use a backslash (\) to break a line, but do not break in the middle of commands.<br>
+
+
+</p>
+</div>
+
+
+<div class="project" onclick="openProject(this)">
+Lesson 3 - Click to expand
+<p class="desc" style="display:none">
+<strong>Characteristics of JS:</strong><br><br>
+<strong>Interpreted Language:</strong><br> Requires a browser to run and works with HTML.<br>
+<strong>Scripting Language:</strong> <br> Created for simple repetitive tasks; provides instructions to other programs rather than having its own interface.<br>
+<strong>Client-Side Scripting:</strong><br> Executed on the user's machine rather than the server.<br>
+<strong>Object-Oriented Programming (OOP):</strong><br> Treats system elements as objects with associated "methods" (functions).<br><br>
+<strong>Key Concepts:</strong><br>
+<strong>Objects:</strong><br> Items in the browser (e.g., window, page, status bar, date/time).<br>
+<strong>Methods:</strong><br> Actions performed on or by an object.<br>
+<strong>Properties:</strong><br> Existing subsections of an object.<br>
+<strong>Event:</strong> <br>Something that happens, like a page loading or a mouse click.<br>
+<strong>Parameter:</strong> <br>Data/objects describing an object's characteristics.<br>
+<strong>Type:</strong> <br>Category of variable (integer, string, Boolean, etc.).<br>
+<strong>Type conversion: </strong><br> Converting a variable from one type to another.<br><br>
+<strong>Commonly Used Objects:</strong><br>
+<strong>Window:</strong> <br>The main object. Includes location (new location), open (new window), and setTimeout (time intervals).<br>
+<strong>Document:</strong> <br>Derived from the window object; container for HTML objects.<br> Methods include fgColor, cookie, write, and lastModified.<br>
+<strong>Math:</strong><br> Provides math operations like PI, pow(a,b), max(a,b), and min(a,b).<br>
+<strong>Navigator:</strong><br> Determines the browser type. Properties include appName, appVersion, cookieEnabled, and platform.<br><br>
+<strong>Syntax Rules:</strong><br>
+Parentheses () are called the "instance".<br>
+Parsing: <br>Analyzing data and converting it to a format the JS engine understands.<br>
+
+
+
+</p>
+</div>
+
+<div class="project" onclick="openProject(this)">
+Lesson 4 - Click to expand
+<p class="desc" style="display:none">
+<strong>Events, Popup Boxes, and Variables</strong><br>
+<strong>Events:</strong> <br>Actions triggered by mouse clicks, keyboard strokes, image loading, or form submission.<br>
+-<strong>Event Triggers:</strong><br> onabort (loading interrupted), onblur (loses focus), onchange (content change), onclick (mouse click), onerror (load error), onload (finished loading), onmouseover/out (mouse movement), onsubmit (form submission).<br>
+-onload/onunload are used for browser checks or cookie handling.<br>
+-onsubmit calls validation functions; if the function returns 'true', the form is submitted; if 'false', it is cancelled.<br><br>
+<strong>Popup Boxes:</strong><br>
+<strong>Alert Box:</strong><br> Used for warnings/greetings. <br>
+User-Input Prompt Box:<br> Gathers data before a user enters a page. Returns encoded value if "ok" is clicked, or null if "cancel" is clicked. . <br>
+<strong>Confirm Box:</strong><br> Verifies or accepts something. Returns true for "ok" and false for "cancel". Syntax: confirm(“message”);.<br><br>
+<strong>Variables:</strong><br>
+Temporary storage for values and expressions.<br>
+<strong>Rules for Naming:</strong><br> Must begin with a letter or underscore; no spaces or punctuation; cannot start with a digit; case-sensitive; avoid reserved words.<br>
+<strong>Declaration:</strong><br> Use the var keyword. If a value is assigned without declaration, JS declares it automatically.<br>
+<strong>Loosely Typed:</strong> <br>Data types don't need to be defined in advance; they adapt based on the value assigned and can change during runtime.<br><br>
+<strong>Data Types:</strong><br>
+<strong>String literals:</strong> <br>Text in quotation marks.<br>
+<strong>Boolean:</strong> <br>Represents true or false.<br>
+<strong>Undefined:</strong> <br>Variable not yet given a value.<br>
+<strong>Null: </strong><br>Defined but assigned a value of null.<br>
+<strong>Array:</strong> <br>Object containing mapped values and keys.<br>
+
+
+
+</p>
+</div>
+</div>
+<script>
+/* TYPEWRITER */
+
+const text = "These are the original content of quarters first, second, and fourth and browser outputs of the third quarter.";
+let index = 0;
+
+function type(){
+  if(index < text.length){
+    document.getElementById("type").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(type,40);
+  }
+}
+
+type();
+
+/* PROJECT EXPAND */
+
+function openProject(el){
+
+  const desc = el.querySelector(".desc");
+
+  if(desc.style.display === "none" || desc.style.display === ""){
+    desc.style.display = "block";
+  } else {
+    desc.style.display = "none";
+  }
+
+}
+</script>
+
+<script>
+
+function createHeart(){
+
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤";
+
+  heart.style.left = Math.random()*100 + "vw";
+  heart.style.bottom = "-20px";
+  heart.style.animationDuration = (4 + Math.random()*4) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(()=>{
+    heart.remove();
+  },8000);
+
+}
+
+setInterval(createHeart,900);
+
+</script>
+<script>
+
+const tabs = document.querySelectorAll(".tab");
+const pages = document.querySelectorAll(".pageContent");
+
+tabs.forEach(tab=>{
+  tab.addEventListener("click", ()=>{
+
+    tabs.forEach(t=>t.classList.remove("active"));
+    pages.forEach(p=>p.classList.remove("active"));
+
+    tab.classList.add("active");
+
+    const page = document.getElementById(tab.dataset.page);
+    page.classList.add("active");
+
+  });
+});
+
+</script>
+</body>
+</html>
