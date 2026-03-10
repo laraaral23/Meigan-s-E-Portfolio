@@ -162,7 +162,7 @@ z-index:999;
 </head>
 
 <body>
-<a href="E-PORTFOLIO.html" class="home-tab" onclick="openPage('home')">Go Back to Home</a>
+<a href="index.html" class="home-tab" onclick="openPage('home')">Go Back to Home</a>
 <header>
 <h1>Araling Panlipunan</h1>
 <p> Aralin 1-6 ng Ikaapat na Markahan</p>
@@ -910,3 +910,4 @@ page.style.animation='flip .8s';
 
 </body>
 </html>
+
