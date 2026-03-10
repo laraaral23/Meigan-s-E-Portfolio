@@ -249,7 +249,7 @@ Reflection Questions: <br>
 
   <div class="event-gallery">
     <div class="event-card">
-      <img src="mvm.jpg" alt="Event 1">
+      <img src="mvm.JPG" alt="Event 1">
         <img src="mvp.jpeg" alt="Event 1">
       <h3>Most Valuable Person </h3>
       <p>1. The most important thing I learned from joining this year's Most Valuable Person or MVP is going out of your usual setting or something we get used to isn't bad after all. Well, in fact it was a great experience to be able to represent my section in a event that speaks a lot about the values we should always put into practice. <br> <br>
@@ -370,3 +370,4 @@ document.getElementById("surveyForm").addEventListener("submit", function(e){
 </body>
 
 </html>
+
