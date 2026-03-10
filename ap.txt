@@ -54,8 +54,9 @@ a.size {
       <a href="ap1.html"> a. Pictures per lesson </a> |
       <a href="ap2.html">b. Lecture </a> 
     </h1> <br> <br>
- <a class="size" href="E-PORTFOLIO.html">Back to Home Page! </a> 
+ <a class="size" href="index.html">Back to Home Page! </a> 
 
   </div>
 </body>
+
 </html>
