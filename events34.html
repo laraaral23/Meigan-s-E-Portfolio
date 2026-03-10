@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>content</title>
+
+<style>
+.kdrama-events {
+  background: linear-gradient(120deg, #ffe3e3, #fff0f5);
+  padding: 60px 20px;
+  text-align: center;
+   position: relative;
+  overflow: hidden; /* for floating elements */
+}
+
+.kdrama-events h2 {
+  font-size: 2.5rem;
+  color: #ff6ec7;
+  margin-bottom: 10px;
+}
+
+.kdrama-events p {
+  font-size: 1.2rem;
+  color: #ff8fb1;
+  margin-bottom: 40px;
+font-family: Comic Sans MS;
+
+}
+h2{
+  font-family:'Lexend';
+  text-shadow:0 0 10px pink;
+}
+/* Event gallery and cards */
+.event-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 2; /* keep above hearts/bubbles */
+}
+
+.event-card {
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0 20px 40px rgba(255, 105, 180, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: float 4s ease-in-out infinite;
+}
+
+.event-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 30px 60px rgba(255, 105, 180, 0.35);
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: 5px solid;
+  border-image: linear-gradient(135deg, #ff9ad1, #ff6ec7) 1;
+}
+
+.event-card h3 {
+  color: #ff6ec7;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  color: #ff8fb1;
+  line-height: 1.4;
+}
+
+/* Floating animation for cards */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Floating bubbles */
+.bubbles .bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 182, 193, 0.4);
+  border-radius: 50%;
+  animation: bubbleFloat calc(5s * var(--i)) infinite linear;
+  left: calc(20% * var(--i));
+}
+
+@keyframes bubbleFloat {
+  0% { transform: translateY(0px); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-600px); opacity: 0; }
+}
+
+/* Floating hearts */
+.hearts .heart {
+  position: absolute;
+  bottom: -30px;
+  width: 25px;
+  height: 25px;
+  background: #ff6ec7;
+  transform: rotate(-45deg);
+  animation: heartFloat calc(6s * var(--i)) infinite linear;
+  left: calc(25% * var(--i));
+}
+
+.hearts .heart::before,
+.hearts .heart::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #ff6ec7;
+  border-radius: 50%;
+}
+
+.hearts .heart::before {
+  top: -12.5px;
+  left: 0;
+}
+
+.hearts .heart::after {
+  left: 12.5px;
+  top: 0;
+}
+
+@keyframes heartFloat {
+  0% { transform: translateY(0px) rotate(-45deg); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-600px) rotate(-45deg); opacity: 0; }
+}
+
+.sparkle{
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:pink;
+  border-radius:50%;
+  animation:sparkleAnim 1s forwards;
+}
+
+@keyframes sparkleAnim{
+  0%{transform:scale(1);opacity:1;}
+  100%{transform:scale(3);opacity:0;}
+}
+
+#progressBar{
+  position:fixed;
+  top:0;
+  left:0;
+  height:5px;
+  background:#ff6ec7;
+  width:0%;
+  z-index:999;
+}
+
+.survey-box{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  width:300px;
+  margin:50px auto;
+  box-shadow:0 15px 30px rgba(255,105,180,0.25);
+  text-align:center;
+}
+
+.survey-box h3{
+  color:#ff6ec7;
+  font-family:comfortaa;
+}
+
+.survey-box label{
+  color:#ff8fb1;
+  font-family:Comic Sans MS;
+  cursor:pointer;
+}
+
+.survey-box button{
+  background:#ff6ec7;
+  border:none;
+  padding:10px 20px;
+  border-radius:20px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.survey-box button:hover{
+  background:#ff9ad1;
+  transform:scale(1.05);
+}
+
+.home-tab{
+position:fixed;
+top:20px;
+left:20px;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+z-index:999;
+}
+
+</style>
+<body>
+<a href="E-PORTFOLIO.html" class="home-tab" onclick="openPage('home')">Go Back to Home</a>
+
+<section class="kdrama-events">
+  <h2>3rd Quarter Events ! 🌸</h2>
+  <p><b>Reflections</b> 💖 <br><br>
+Reflection Questions: <br>
+
+<em>1.What is the most important thing I learned from the event?<br>
+
+2. How can I apply what I learned in real-life situations?<br>
+
+3. Did I actively participate in the event? How?<br>
+
+4. If I were to teach this topic/subject to a classmate, how would I explain it?<br>
+
+5. Why is it important to have an event (per subject)? Explain your answer.</em> <br></p>
+
+  <!-- Floating bubbles container -->
+  <div class="bubbles">
+    <div class="bubble" style="--i:1;"></div>
+    <div class="bubble" style="--i:2;"></div>
+    <div class="bubble" style="--i:3;"></div>
+    <div class="bubble" style="--i:4;"></div>
+    <div class="bubble" style="--i:5;"></div>
+  </div>
+
+  <!-- Floating hearts container -->
+  <div class="hearts">
+    <div class="heart" style="--i:1;"></div>
+    <div class="heart" style="--i:2;"></div>
+    <div class="heart" style="--i:3;"></div>
+  </div>
+
+  <div class="event-gallery">
+    <div class="event-card">
+      <img src="mvm.jpg" alt="Event 1">
+        <img src="mvp.jpeg" alt="Event 1">
+      <h3>Most Valuable Person </h3>
+      <p>1. The most important thing I learned from joining this year's Most Valuable Person or MVP is going out of your usual setting or something we get used to isn't bad after all. Well, in fact it was a great experience to be able to represent my section in a event that speaks a lot about the values we should always put into practice. <br> <br>
+2. I can apply what I learned in joining future pageantry and encouraging others to join in this kind of event. The confidence I built while preparing for the competition shaped a big part of my love for yourself right now.  <br> <br>
+3. Yes, I proudly represented my section and the virtue of “Maawain”. Joining this competition was one of my best decision I made for the last month of 2025. It really was a great experience and I am still for grateful for the opportunity. <br> <br>
+4. Pageantry, if I were to explain this to a classmate I will explain it by experience. Pageantry for some can be too intimidating or scary but it really wasn't. If you love what you're doing, you just feel like having fun and not minding any of the pressure in the competition. In pageantry, you only need to trust yourself, be you.  <br> <br>
+5. An event like this is important because it focuses on values we, as students should embody. They just made it more engaging in the style of pageantry. It helps students to fully understand the importance of these core values. <br> <br>
+</p>
+    </div>
+
+    <div class="event-card">
+      <img src="vpop.jpeg" alt="Event 2">
+      <h3>Values POP </h3>
+      <p>1.The most important thing I learned from this year's VPOP competition is there are certain things that we cannot do alone. In this world today, a helping hand or a shoulder to lean on when situations get hard is essential and we should always have one. <br> <br>
+2. I can apply what I learned in efficiently leading others through a shared goal and duty to fairly receive victory. <br><br>
+3. Yes, I became the director for our VPOP, helping with the lyrics, melody, dance steps, costume, and props for the whole performance. <br><br>
+4. VPOP or Values POP, if I were to explain this to a classmate I would tell him or her that this event focuses on nurturing students in creating their own song and dance performance about values we need at the time.<br>
+<br>
+5. An event like this is important to deeply show camaraderie in each section of all garde levels in the junior high school. It helps students to have a much deeper bond with their classmates and get to know them more.<br>
+<br>
+
+</p>
+    </div>
+
+    <div class="event-card">
+      <img src="op.jpg" alt="Event 3">
+      <h3>Outreach Program</h3>
+      <p>1. The most important thing I learned from being a part of this year's outreach program is we should always be grateful no matter what. Being appreciated shows a lot about a person's personality, there are no limitations in being thankful.<br><br>
+2. I can apply what I learned in helping others without expecting something in return. That we should always apply being kind in everything that we do today.<br><br>
+3. Yes, as a candidate of this year's MVP we were required to join and participate in the outreach program alongside with the Values club officers.<br><br>
+4. Sharing and/or giving blessings to others, it is really simple, we share and give because we want to, not because we need or we were asked to. Helping doesn't always come in material things, good deeds and prayers can also be ways to help.<br><br>
+5. An outreach program like this is important to let students express and share what they have with people in need. It teaches us to be generous and not be selfish.<br><br>
+</p>
+    </div>
+<h2>4th Quarter Events ! 🌸 </h2>
+<br><br>
+
+<div class="event-card">
+      <img src="sd.jpeg" alt="Event 1">
+      <h3>Street Dance</h3>
+      <p>1. The most important thing I learned from joining this year's Street Dance competition is that everything can be possible if teamwork and perseverance is seen in every member. Victory in a group couldn't be achieved if only one person wants to achieve this. In every competition or groupwork we have, a single and clear goal should be imprinted in everyone's mind. <br><br>
+2. I can apply what I learned in various situations that requires seeking for motivation in a group. Groups doesn't always experience the best and when others are doubtful, the only people they have is their groupmates. Motivation and proper guidance is what they need and a constant reminder on why are we doing this, what things do we achieve if we can on trying and pushing to be at our very best.  <br><br>
+3. Yes, I joined this year's street dance competition under the group Hataw Hiraya. Consisting of 16 members from 9 faith and family and we instantly had a strong bond with each other. <br><br>
+4. Dancing, if I were to explain this to a classmate I will say first that dancing doesn't require to be the best of the best or having the smoothest moves. It is all about being free and expressing your self in ways words can't fully explain. In every step and move in dancing it requires confidence, trust, and being true to yourself. <br><br>
+5. A dance competition like this is important to gladly showcase students’ talent in dancing and this also opens greater bond with junior high school students’ at LPSci in supporting and being there for others. This competition opens doors for students’ that have a great potential in joining higher dance competition and representing the school. <br><br>
+</p>
+    </div>
+
+<div class="event-card">
+      <img src="bot.jpg" alt="Event 2">
+      <h3>Battle Of The Bands</h3>
+      <p>1. The most important thing I learned from watching this year's Battle of the bands is if you really love what you're doing, success comes in return. In everything that we do, we shouldn't do it “just because” we need to but because we like to do it.<br><br>
+2. I can apply what I learned in completing schoolworks, it may be sometimes tough but there will always be a constant motivation to us why we need to keep going, to make ourselves happy. <br><br>
+3. No, I only supported the bands from the junior high school level most especially the three bands of grade 9, Umasaginp, Kabanata, and Padayon. <br><br>
+4. Band competition, if I were to explain this to a classmate I would probably say that it requires a lot of practices and confidence. To be able to perform at stage and manifesting that there will be no mistakes in the bands shows a high level of trust on one another. <br><br>
+5. A band competition like this is important to greatly show how students can also be talented not only in academics but also in singing, playing an instrument, and performing. <br><br>
+</p>
+    </div>
+
+<div class="event-card">
+      <img src="tala.jpeg" alt="Event 3">
+      <h3>OPM Duet</h3>
+      <p>1. The most important thing I learned from this event is you never what someone have prepared unless you will see it on yourself. Trusting your classmates with the talent that they have and representing our section is such a great thing to experience.<br><br>
+
+2. I can apply what I learned in supporting others to do their best and being there for them in competitions like this. <br><br>
+
+3. No, I only had the opportunity to watch and support our section's representatives, Tamara Barlis and Bela Paguigan and other contestants.  <br><br>
+4. Singing, if I were to explain this to a classmate I will say that singing requires a lot of time and practices. Being good at singing doesn't come overnight but rather months or years to be called a good and outstanding singer.<br><br>
+
+5. A singing competition like this is important to showcase students' talent in singing, creating more opportunities they can participate to in the future. <br><br>
+
+</p>
+    </div>
+
+  </div>
+<script>
+document.addEventListener("click", function(e){
+  const sparkle = document.createElement("div");
+  sparkle.className = "sparkle";
+  sparkle.style.left = e.pageX + "px";
+  sparkle.style.top = e.pageY + "px";
+  document.body.appendChild(sparkle);
+
+  setTimeout(()=>sparkle.remove(),1000);
+});
+</script>
+
+<div id="progressBar"></div>
+<div class="survey-box">
+  <h3>💗 Favorite Event </h3>
+  <p>Which event was your favorite?</p>
+
+  <form id="surveyForm">
+    <label><input type="radio" name="event" value="MVP"> Most Valuable Person</label><br>
+    <label><input type="radio" name="event" value="VPOP"> Values POP</label><br>
+    <label><input type="radio" name="event" value="Outreach"> Outreach Program</label><br>
+    <label><input type="radio" name="event" value="Street Dance"> Street Dance</label><br>
+    <label><input type="radio" name="event" value="Battle of the Bands"> Battle of the Bands</label><br>
+    <label><input type="radio" name="event" value="OPM Duet"> OPM Duet</label><br><br>
+
+    <button type="submit">Submit 💗</button>
+  </form>
+
+  <p id="thankYouMsg"></p>
+
+</div>
+<script>
+document.getElementById("surveyForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  document.getElementById("thankYouMsg").innerText = "✨ Thank you for answering ! 💗";
+});
+</script>
+
+</section>
+
+
+</div>
+</body>
+</html>
